@@ -1,5 +1,5 @@
 #Code for Cinner et al.2019: Meeting multiple goals for the world's coral reefs
-#Created by Jessica Zamborain-Mason on 15/08/2018
+#Created by Jessica Zamborain-Mason and David Moulliot on 15/08/2018
 #ARC Centre of Excellence for Coral Reef Studies
 #R version 3.4.2 (2017-09-28)
 
