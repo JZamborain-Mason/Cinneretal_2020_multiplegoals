@@ -9,8 +9,7 @@ rm(list = ls())
 
 ##set working directory
 #NOTE:Please add your working directory (i.e., location where data is stored)
-setwd("c:/Users/jzamb/Documents/AUSTRALIA/PhD/Research Worker Josh 2018/Multifunctionality paper/R/FINAL CODE_DATA/FINAL/FINAL SUBMITTED/FINAL ACCEPTED") 
-#setwd("") 
+setwd("") 
 
 ##load required libraries
 library(ggplot2) ##H. Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016
@@ -25,7 +24,7 @@ library(broom) #David Robinson and Alex Hayes (2019). broom: Convert Statistical
 library(coda) #Martyn Plummer, Nicky Best, Kate Cowles and Karen Vines (2006). CODA: Convergence Diagnosis and Output.Analysis for MCMC, R News, vol 6, 7-11
 library(data.table) #Matt Dowle and Arun Srinivasan (2019). data.table: Extension of `data.frame`
 library(lme4) #Douglas Bates, Martin Maechler, Ben Bolker, Steve Walker (2015) #. Fitting Linear Mixed-Effects Models.Using lme4. Journal of Statistical Software, 67(1), 1-48. doi:10.18637/jss.v067.i01.
-library(brms) # Paul-Christian Bürkner (2017). brms: An R Package for Bayesian Multilevel Models Using Stan. Journal of StatisticalSoftware, 80(1), 1-28. doi:10.18637/jss.v080.i01
+library(brms) # Paul-Christian BÃ¼rkner (2017). brms: An R Package for Bayesian Multilevel Models Using Stan. Journal of StatisticalSoftware, 80(1), 1-28. doi:10.18637/jss.v080.i01
 library(DHARMa)#Florian Hartig (2019). DHARMa: Residual Diagnostics for Hierarchical (Multi-Level / Mixed) Regression Models. R package version 0.2.4. https://CRAN.R-project.org/package=DHARMa
 library(plyr)#Hadley Wickham (2011). The Split-Apply-Combine Strategy for Data Analysis. Journal of Statistical Software, 40(1), 1-29. URL http://www.jstatsoft.org/v40/i01/.
 library(networkD3) # J.J. Allaire, Christopher Gandrud, Kenton Russell and CJ Yetman (2017). networkD3: D3 JavaScript Network Graphs from R. R package version 0.4. https://CRAN.R-project.org/package=networkD3
