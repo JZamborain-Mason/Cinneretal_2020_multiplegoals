@@ -1055,12 +1055,10 @@ data_predvalues2$category3goals=ifelse(data_predvalues2$tot_25==0,"< 25", ifelse
 FigureX=ggplot() + 
   geom_polygon(data = mapWorld, aes(x=long, y = lat, group = group),fill = "grey", color = "grey") +
   coord_fixed(xlim = c(30, 320),  ylim = c(30, -30), ratio = 1.3)+
-  geom_point(data=data_predvalues2[data_predvalues2$tot_25==0,], aes(x=lon2, y=Site_Lat2),colour="black", pch=16, size=3)+
-  geom_point(data=data_predvalues2[data_predvalues2$tot_25==1,], aes(x=lon2, y=Site_Lat2),colour="#f768a1", pch=16, size=3)+
-  geom_point(data=data_predvalues2[data_predvalues2$tot_50==1,], aes(x=lon2, y=Site_Lat2),colour="#c51b8a", pch=16, size=3)+
-  geom_point(data=data_predvalues2[data_predvalues2$tot_75==1,], aes(x=lon2, y=Site_Lat2),colour="#7a0177", pch=16, size=3)+
+  geom_point(data=data_predvalues2, aes(x=lon2, y=Site_Lat2, fill=data_predvalues2$category3goals, col=data_predvalues2$category3goals), pch=21, size=3)+
+  scale_fill_manual(values=c("> 75"="#7a0177","50-75"="#c51b8a","25-50"="#f768a1","< 25"="black"),guide=F)+
+  scale_colour_manual(values=c("> 75"="#7a0177","50-75"="#c51b8a","25-50"="#f768a1","< 25"="black"),guide=F)+
   geom_hline(yintercept =23.43695, lty=2)+
-  
   geom_hline(yintercept =-23.43695, lty=2)+scale_x_continuous("",breaks=c(80,180,280),labels=c(-100,0,100))+
   scale_y_continuous("",breaks=c(-20,-10,0,10,20))+ theme_classic()
 
