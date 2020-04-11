@@ -605,7 +605,7 @@ X = model.matrix(~DepthCategory+CleanHabitat+Protection+CensusMethod+sTotal_samp
                    sRegional_population_growth+sOcean_prod+sClimate_stress+
                    sHDI+sLarger_pop_size+sReef_fish_landings_per_km2,data=MyData_b20)
 
-coefs_b20=as.matrix(B20_model_totexp1)[, paste("b",row.names(fixef(B20_model_totexp1)),sep="_")] #alternative
+coefs_b20=as.matrix(B20_model_totexp2)[, paste("b",row.names(fixef(B20_model_totexp2)),sep="_")] #alternative
 
 fit_b20=coefs_b20 %*% t(X)
 #for each row, get the probability of the column
@@ -670,7 +670,7 @@ X = model.matrix(~DepthCategory+CleanHabitat+Protection+CensusMethod+sTotal_samp
                    sRegional_population_growth+sOcean_prod+sClimate_stress+
                    sHDI+sLarger_pop_size+sReef_fish_landings_per_km2,data=MyData_hf)
 
-coefs_hf=as.matrix(her_model_totexp1)[, paste("b",row.names(fixef(her_model_totexp1)),sep="_")] #alternative
+coefs_hf=as.matrix(her_model_totexp2)[, paste("b",row.names(fixef(her_model_totexp2)),sep="_")] #alternative
 
 fit_hf=coefs_hf %*% t(X)
 dim(fit_hf)
@@ -735,7 +735,7 @@ X = model.matrix(~DepthCategory+CleanHabitat+Protection+CensusMethod+sTotal_samp
                    sRegional_population_growth+sOcean_prod+sClimate_stress+
                    sHDI+sLarger_pop_size+sReef_fish_landings_per_km2,data=MyData_td)
 
-coefs_td=as.matrix(fundiv_model_totexp1)[, paste("b",row.names(fixef(fundiv_model_totexp1)),sep="_")] #alternative
+coefs_td=as.matrix(fundiv_model_totexp2)[, paste("b",row.names(fixef(fundiv_model_totexp2)),sep="_")] #alternative
 
 fit_td=coefs_td %*% t(X)
 
